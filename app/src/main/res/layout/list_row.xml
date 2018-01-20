@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/sensor_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textStyle="bold"
+        android:text="sensor_id" />
+
+    <TextView
+        android:id="@+id/serial_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensor_id"
+        android:paddingBottom="2dip"
+        android:text="seril_id" />
+
+    <TextView
+        android:id="@+id/temp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/serial_id"
+        android:paddingBottom="2dip"
+        android:text="temp_value" />
+
+    <TextView
+        android:id="@+id/temp_sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_value"
+        android:paddingBottom="2dip"
+        android:text="temp_sd" />
+
+    <TextView
+        android:id="@+id/SSR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_sd"
+        android:paddingBottom="2dip"
+        android:text="SSR" />
+
+    <TextView
+        android:id="@+id/MOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SSR"
+        android:paddingBottom="2dip"
+        android:text="MOD" />
+
+    <TextView
+        android:id="@+id/SS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MOD"
+        android:paddingBottom="2dip"
+        android:text="SS" />
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+    <com.sccomponents.widgets.ScArcGauge
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gauge"
+        sc:scc_angle_start="-180"
+        sc:scc_angle_sweep="180"
+        sc:scc_stroke_colors="#00B4FF|#8BBE28|#EC4949"
+        sc:scc_stroke_colors_mode="solid"
+        sc:scc_stroke_size="25dp"
+        android:padding="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/indicator"
+            android:src="@drawable/indicator3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="33dp"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
