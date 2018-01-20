@@ -63,9 +63,10 @@
         android:text="SS" />
 
     <FrameLayout
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true">
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
 
     <com.sccomponents.widgets.ScArcGauge
         android:layout_width="180dp"
