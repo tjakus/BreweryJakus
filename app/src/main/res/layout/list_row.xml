@@ -63,23 +63,24 @@
         android:text="SS" />
 
     <FrameLayout
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerVertical="true">
 
-    <com.sccomponents.widgets.ScArcGauge
-        android:layout_width="180dp"
+    <com.sccomponents.gauges.ScArcGauge
+        xmlns:sc="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/gauge"
-        sc:scc_angle_start="-180"
-        sc:scc_angle_sweep="180"
-        sc:scc_stroke_colors="#00B4FF|#8BBE28|#EC4949"
-        sc:scc_stroke_colors_mode="solid"
-        sc:scc_stroke_size="25dp"
+        sc:angleStart="-180"
+        sc:angleSweep="180"
+        sc:strokeColors="#00B4FF|#8BBE28|#EC4949"
+        sc:strokeColorsMode="solid"
+        sc:strokeSize="25dp"
         android:padding="40dp"
         android:layout_gravity="center_horizontal"
-        android:layout_alignParentEnd="true" />
+         />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -87,8 +88,8 @@
             android:layout_gravity="bottom|center_horizontal"
             android:id="@+id/indicator"
             android:src="@drawable/indicator3"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="33dp"/>
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="30dp"/>
 
     </FrameLayout>
 

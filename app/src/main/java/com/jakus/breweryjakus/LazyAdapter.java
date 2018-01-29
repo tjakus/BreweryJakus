@@ -13,8 +13,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.sccomponents.widgets.ScArcGauge;
-import com.sccomponents.widgets.ScGauge;
+import com.sccomponents.gauges.ScArcGauge;
+import com.sccomponents.gauges.ScGauge;
+
 
 /**
  * Created by etomjak on 01/05/17.
@@ -111,7 +112,7 @@ public class LazyAdapter extends BaseAdapter {
                 Log.i("LazyAdapter", "setOnEventListener - low" + lowValue);
                 Log.i("LazyAdapter", "setOnEventListener - high" + highValue);
                 // Convert the percentage value in an angle
-                float temp = highValue / 30f * 100f;
+                float temp = highValue / 36f * 100f;
                 if (temp > 100f)
                     temp = 100f;
                 float angle = gauge.percentageToAngle(temp);
